@@ -1,0 +1,141 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(46, 212, 157);
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#main .round {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#main .game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-top: 120px;
+}
+
+#main .game .player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main .game .player .gesture {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main .game .player .name {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#main .game .player .score {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+#main .game .player p .failure {
+    /* display: inline-block; */
+    color: brown;
+}
+
+#main .game .computer .computer-img {
+    transform: rotate(45deg);
+}
+
+#main .game .my .my-img {
+    transform: rotate(180deg);
+}
+
+#main .game .result {
+    font-size: 36px;
+}
+
+#select-dialog {
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+}
+
+
+#select-dialog::backdrop {
+    background-color: rgba(46, 212, 157,0.45);
+}
+
+#select-dialog .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#select-dialog .row select {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#select-dialog .row:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+#submit-select {
+    background-color: #4b69d5;
+}
+
+.start-this-round {
+    margin-top: 30px;
+}
+
+#start {
+    background-color: cornflowerblue;
+    font-weight: 500;
+}
+
+.this-result {
+    margin-top: 32px;
+    font-weight: 400;
+}
+
+.final-result {
+    margin-top: 64px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btn {
+    height: 30px;
+    outline: none;
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+}
+
+#reset {
+    display: block;
+    height: 30px;
+    border: 0;
+    border-radius: 10px;
+    margin: 15px auto;
+    background-color: rgb(239, 186, 180);
+    text-align: center;
+}

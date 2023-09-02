@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>石头剪刀布</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./demo.css">
+</head>
+
+<body>
+    <div id="main">
+        <p class="round"></p>
+        <div class="game">
+            <div class="robot player">
+                <div class="gesture">
+                    <span class="result">?</span>
+                </div>
+                <p class="name">
+                    机器人
+                </p>
+                <p class="score">
+                    胜：<span class="success">0</span> | 负：<span class="failure">0</span>
+                </p>
+            </div>
+            <div class="my player">
+                <div class="gesture">
+                    <span class="result">?</span>
+                </div>
+                <p class="name">
+                    Naak
+                </p>
+                <p class="score">
+                    胜：<span class="success">0</span> | 负：<span class="failure">0</span>
+                </p>
+            </div>
+        </div>
+        <!-- 宣布每局结果 -->
+        <div class="this-result"></div>
+        <!-- 宣布最终结果 -->
+        <div class="final-result">
+            <button id="start" class="btn">开始下一回合</button>
+        </div>
+    </div>
+    <!--<button id="reset">重置游戏</button>-->
+
+
+    <!-- 弹框 -->
+    <dialog id="select-dialog">
+        <form id="select-form">
+            <p class="row">
+                <label for="gesture">
+                    请选择要出的手势：
+                </label>
+                <select name="gesture" id="gesture-select">
+                    <option value="rock">石头</option>
+                    <option value="scissor">剪刀</option>
+                    <option value="paper">布</option>
+                </select>
+            </p>
+            <p class="row">
+                <button class="btn" type="submit" id="submit-select">确定</button>
+            </p>
+        </form>
+    </dialog>
+    <script src="./demo.js"></script>
+</body>
+
+</html>
