@@ -75,11 +75,11 @@ function playRound(playerChoice) {
         }, 2000);
         setTimeout(() => {
             if (playerWins > robotWins) {
-                finalResult.textContent = "你赢了游戏！";
+                finalResult.textContent = "🥳恭喜！！你赢了！";
             } else if (playerWins < robotWins) {
-                finalResult.textContent = "机器人赢了游戏！";
+                finalResult.textContent = "🤖很遗憾~机器人赢了！";
             } else {
-                finalResult.textContent = "游戏结束，平局！";
+                finalResult.textContent = "ᕙ(`▿´)ᕗ 游戏结束，平局！";
             }
         }, 3000)
 
